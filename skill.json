@@ -1,0 +1,38 @@
+{
+  "name": "genpark-procedural-ast-flowchart-logic-diagram-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Procedural AST flowchart and logic diagram synthesizer generating validated decision diamonds and clean Mermaid SVGs.",
+  "author": "genpark",
+  "category": "diagram-generator",
+  "tags": [
+    "flowchart-generator",
+    "mermaid-ast",
+    "logic-diagram",
+    "process-workflow",
+    "decision-tree-svg"
+  ],
+  "inputs": {
+    "process_logic_description": {
+      "type": "string"
+    },
+    "output_format": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "flowchart_id": {
+      "type": "string"
+    },
+    "decision_diamonds_count": {
+      "type": "integer"
+    },
+    "syntax_graph_validated": {
+      "type": "boolean"
+    },
+    "rendered_svg_diagram_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
